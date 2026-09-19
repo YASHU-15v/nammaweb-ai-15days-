@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nammaweb | Elite Tech Immersion & Internship Program</title>
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Join Nammaweb for an exclusive 15-day immersion to 3-month internship. Gain high-level training, direct mentorship, and build a live project portfolio.">
+    <meta name="keywords" content="Nammaweb, tech internship, live project portfolio, mentorship, coding bootcamp India, premium tech training">
+    
+    <!-- Google Fonts for Luxury Branding -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        /* Base Variables & Reset */
+        :root {
+            --primary: #0a6b6c; /* Deep teal to match the geometric logo */
+            --secondary: #d4af37; /* Luxury Gold */
+            --dark: #121212;
+            --light: #fafafa;
+            --text: #333333;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body { 
+            font-family: 'Montserrat', sans-serif; 
+            color: var(--text); 
+            background-color: var(--light); 
+            line-height: 1.6; 
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, .brand-name { 
+            font-family: 'Playfair Display', serif; 
+        }
+
+        a { text-decoration: none; color: inherit; }
+
+        /* Header & Navigation */
+        header { 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            padding: 1.5rem 5%; 
+            background: #ffffff; 
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05); 
+            position: sticky; 
+            top: 0; 
+            z-index: 100; 
+        }
+
+        .logo-section { 
+            display: flex; 
+            align-items: center; 
+            gap: 15px; 
+        }
+
+        .logo-section img { 
+            height: 60px; /* Adjust based on exact logo dimensions */
+            width: auto;
+        }
+
+        .brand-name { 
+            font-size: 2rem; 
+            font-weight: 700; 
+            color: var(--primary); 
+            letter-spacing: 1px;
+        }
+
+        .contact-email { 
+            font-size: 0.85rem; 
+            color: #777; 
+            font-weight: 500; 
+            margin-top: -5px; 
+            display: block;
+        }
+
+        nav ul { 
+            display: flex; 
+            list-style: none; 
+            gap: 2.5rem; 
+            align-items: center;
+        }
+
+        nav a { 
+            font-weight: 500; 
+            text-transform: uppercase; 
+            font-size: 0.9rem; 
+            letter-spacing: 1px;
+            transition: color 0.3s ease; 
+        }
+
+        nav a:hover { color: var(--secondary); }
+
+        .btn-outline {
+            border: 1px solid var(--primary);
+            padding: 0.6rem 1.5rem;
+            color: var(--primary);
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-outline:hover {
+            background: var(--primary);
+            color: #fff;
+        }
+
+        /* Hero Section */
+        .hero { 
+            padding: 8rem 5%; 
+            text-align: center; 
+            background: linear-gradient(135deg, rgba(10, 107, 108, 0.05) 0%, rgba(212, 175, 55, 0.05) 100%); 
+        }
+        
+        .hero h1 { 
+            font-size: 4rem; 
+            color: var(--dark); 
+            margin-bottom: 1.5rem; 
+            line-height: 1.2;
+        }
+
+        .hero h1 span { color: var(--primary); }
+        
+        .hero p { 
+            font-size: 1.25rem; 
+            max-width: 800px; 
+            margin: 0 auto 3rem; 
+            color: #555; 
+        }
+
+        .btn-primary { 
+            display: inline-block; 
+            padding: 1.2rem 3rem; 
+            background: var(--primary); 
+            color: white; 
+            border-radius: 4px; 
+            font-weight: 600; 
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 10px 20px rgba(10, 107, 108, 0.2);
+            transition: all 0.3s ease; 
+        }
+
+        .btn-primary:hover { 
+            background: #085556; 
+            transform: translateY(-3px); 
+            box-shadow: 0 15px 25px rgba(10, 107, 108, 0.3);
+        }
+
+        /* Features Section */
+        .features { 
+            padding: 6rem 5%; 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
+            gap: 3rem; 
+            background: #ffffff; 
+        }
+
+        .feature-card { 
+            text-align: center; 
+            padding: 4rem 2rem; 
+            background: #ffffff;
+            border: 1px solid #f0f0f0; 
+            border-radius: 8px; 
+            transition: transform 0.3s ease, box-shadow 0.3s ease; 
+        }
+
+        .feature-card:hover { 
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.06); 
+        }
+
+        .feature-card i { 
+            font-size: 3rem; 
+            color: var(--secondary); 
+            margin-bottom: 2rem; 
+        }
+
+        .feature-card h3 { 
+            font-size: 1.6rem; 
+            margin-bottom: 1rem; 
+            color: var(--dark);
+        }
+
+        /* Booking/Pricing Section */
+        .pricing { 
+            padding: 6rem 5%; 
+            background: var(--dark); 
+            color: white; 
+            text-align: center; 
+        }
+
+        .pricing h2 { 
+            font-size: 3rem; 
+            margin-bottom: 1rem; 
+        }
+
+        .pricing > p {
+            color: #aaa;
+            margin-bottom: 4rem;
+            font-size: 1.1rem;
+        }
+
+        .pricing-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+            gap: 2rem; 
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .pricing-card { 
+            background: #1a1a1a; 
+            padding: 3rem 2.5rem; 
+            border-radius: 8px; 
+            border: 1px solid #333;
+            transition: all 0.3s ease;
+        }
+
+        .pricing-card.featured { 
+            border-color: var(--secondary); 
+            transform: scale(1.05); 
+            background: linear-gradient(180deg, #1a1a1a 0%, #222 100%);
+            box-shadow: 0 20px 40px rgba(212, 175, 55, 0.1);
+        }
+
+        .pricing-card h3 { 
+            font-size: 1.8rem; 
+            margin-bottom: 0.5rem; 
+            color: #fff;
+        }
+
+        .price { 
+            font-size: 2.8rem; 
+            font-weight: 700; 
+            color: var(--secondary); 
+            margin: 1.5rem 0; 
+            font-family: 'Playfair Display', serif;
+        }
+
+        .pricing-card ul { 
+            list-style: none; 
+            margin-bottom: 2.5rem; 
+            text-align: left; 
+        }
+
+        .pricing-card ul li { 
+            margin-bottom: 1rem; 
+            padding-left: 2rem; 
+            position: relative; 
+            color: #ccc;
+        }
+
+        .pricing-card ul li::before { 
+            content: "\f00c"; 
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            position: absolute; 
+            left: 0; 
+            color: var(--secondary); 
+        }
+
+        .btn-book {
+            display: block;
+            padding: 1rem;
+            background: transparent;
+            border: 1px solid var(--secondary);
+            color: var(--secondary);
+            font-weight: 600;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        .pricing-card.featured .btn-book, .btn-book:hover {
+            background: var(--secondary);
+            color: var(--dark);
+        }
+
+        /* SEO Blog Section */
+        .blog { 
+            padding: 6rem 5%; 
+            background: var(--light); 
+        }
+
+        .blog-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .blog-header h2 { 
+            font-size: 3rem; 
+            color: var(--dark); 
+        }
+
+        .blog-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
+            gap: 2.5rem; 
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .blog-post { 
+            background: #fff; 
+            border-radius: 8px; 
+            overflow: hidden; 
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05); 
+            transition: transform 0.3s ease;
+        }
+
+        .blog-post:hover {
+            transform: translateY(-5px);
+        }
+
+        .blog-content { padding: 2.5rem; }
+        
+        .blog-content h3 { 
+            font-size: 1.4rem;
+            margin-bottom: 1rem; 
+            color: var(--primary);
+        }
+
+        .blog-content p { color: #666; margin-bottom: 1.5rem; }
+
+        .read-more { 
+            color: var(--secondary); 
+            font-weight: 600; 
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+        }
+
+        /* WhatsApp Pop-in UI */
+        .whatsapp-float { 
+            position: fixed; 
+            bottom: 40px; 
+            right: 40px; 
+            background-color: #25d366; 
+            color: white; 
+            border-radius: 50px; 
+            padding: 15px 25px; 
+            display: flex; 
+            align-items: center; 
+            gap: 12px; 
+            box-shadow: 0 10px 25px rgba(37,211,102,0.4); 
+            z-index: 1000; 
+            text-decoration: none;
+            opacity: 0; 
+            transform: translateY(50px);
+            animation: popIn 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s forwards; 
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .whatsapp-float:hover { 
+            transform: translateY(-5px); 
+            box-shadow: 0 15px 35px rgba(37,211,102,0.5); 
+        }
+
+        .whatsapp-float i { font-size: 1.8rem; }
+        .whatsapp-float span { font-weight: 600; font-size: 1rem; }
+
+        @keyframes popIn { 
+            to { opacity: 1; transform: translateY(0); } 
+        }
+
+        /* Footer */
+        footer { 
+            padding: 4rem 5%; 
+            background: #000; 
+            color: #777; 
+            text-align: center; 
+        }
+
+        /* Mobile View Adjustments */
+        @media(max-width: 992px) {
+            .hero h1 { font-size: 3rem; }
+            .pricing-card.featured { transform: scale(1); }
+        }
+
+        @media(max-width: 768px) {
+            header { flex-direction: column; gap: 1.5rem; text-align: center; }
+            nav ul { flex-wrap: wrap; justify-content: center; gap: 1rem; }
+            .hero { padding: 5rem 5%; }
+            .hero h1 { font-size: 2.5rem; }
+            .whatsapp-float { bottom: 20px; right: 20px; padding: 15px; }
+            .whatsapp-float span { display: none; } /* Show icon only on small screens */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo-section">
+            <img src="logo.png.png" alt="Nammaweb Logo">
+            <div>
+                <div class="brand-name">Nammaweb</div>
+                <a href="mailto:info@nammaweb.com" class="contact-email">info@nammaweb.com</a>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#program">The Program</a></li>
+                <li><a href="#features">Experience</a></li>
+                <li><a href="#booking">Booking</a></li>
+                <li><a href="#blog">Insights</a></li>
+                <li><a href="#booking" class="btn-outline">Enroll Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="program">
+        <h1>15 Days Immersion to <br><span>3-Month Internship</span></h1>
+        <p>Elevate your career with elite, high-level training. Bridge the gap between academic theory and real-world execution with direct mentorship from industry veterans.</p>
+        <a href="#booking" class="btn-primary">Secure Your Spot</a>
+    </section>
+
+    <!-- Features / Value Proposition Section -->
+    <section class="features" id="features">
+        <div class="feature-card">
+            <i class="fa-solid fa-briefcase"></i>
+            <h3>Live Project Portfolio</h3>
+            <p>Don't just learn—build. Work on enterprise-grade live projects and graduate with a portfolio that commands top-tier industry respect.</p>
+        </div>
+        <div class="feature-card">
+            <i class="fa-solid fa-user-tie"></i>
+            <h3>Direct Mentorship</h3>
+            <p>Experience personalized, 1-on-1 guidance. Our senior architects and designers work directly with you to refine your code and logic.</p>
+        </div>
+        <div class="feature-card">
+            <i class="fa-solid fa-gem"></i>
+            <h3>High-Level Training</h3>
+            <p>Luxury meets technology. We utilize advanced, modern tech stacks designed to prepare you for high-paying roles in premium firms.</p>
+        </div>
+    </section>
+
+    <!-- Booking / Pricing Section -->
+    <section class="pricing" id="booking">
+        <h2>Select Your Immersion</h2>
+        <p>Invest in your future with our meticulously crafted internship timelines.</p>
+        
+        <div class="pricing-grid">
+            <!-- 30 Days -->
+            <div class="pricing-card">
+                <h3>30 Days</h3>
+                <p>Rapid Immersion</p>
+                <div class="price">₹15,000</div>
+                <ul>
+                    <li>15 Days Intensive Training</li>
+                    <li>15 Days Guided Practice</li>
+                    <li>1 Live Project Integration</li>
+                    <li>Standard Mentorship</li>
+                </ul>
+                <a href="https://wa.me/917204248002?text=I am interested in the 30 Days Immersion Program" class="btn-book">Book 30 Days</a>
+            </div>
+
+            <!-- 60 Days (Featured) -->
+            <div class="pricing-card featured">
+                <h3>60 Days</h3>
+                <p>Advanced Internship</p>
+                <div class="price">₹28,000</div>
+                <ul>
+                    <li>15 Days Core Immersion</li>
+                    <li>45 Days Live Internship</li>
+                    <li>3 Enterprise Live Projects</li>
+                    <li>Direct Senior Mentorship</li>
+                    <li>Portfolio Optimization</li>
+                </ul>
+                <a href="https://wa.me/917204248002?text=I am interested in the 60 Days Advanced Program" class="btn-book">Book 60 Days</a>
+            </div>
+
+            <!-- 125 Days -->
+            <div class="pricing-card">
+                <h3>125 Days</h3>
+                <p>Elite Professional</p>
+                <div class="price">₹45,000</div>
+                <ul>
+                    <li>Full Tech-Stack Mastery</li>
+                    <li>90+ Days Industry Deployment</li>
+                    <li>Unlimited Portfolio Projects</li>
+                    <li>Placement Assistance & Reviews</li>
+                </ul>
+                <a href="https://wa.me/917204248002?text=I am interested in the 125 Days Elite Program" class="btn-book">Book 125 Days</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEO Blog Section -->
+    <section class="blog" id="blog">
+        <div class="blog-header">
+            <h2>Latest Insights</h2>
+            <p>High-level strategies for modern developers.</p>
+        </div>
+        <div class="blog-grid">
+            <div class="blog-post">
+                <div class="blog-content">
+                    <h3>Why Live Portfolios Outperform Resumes in 2026</h3>
+                    <p>Discover how transitioning from theoretical certificates to live, functional web deployments dramatically increases your hiring rate at premium tech companies.</p>
+                    <a href="#" class="read-more">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="blog-post">
+                <div class="blog-content">
+                    <h3>The Power of Direct Mentorship in Tech</h3>
+                    <p>Self-teaching can only take you so far. Learn how high-level direct mentorship bridges the gap between a junior coder and a highly-paid senior developer.</p>
+                    <a href="#" class="read-more">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="blog-post">
+                <div class="blog-content">
+                    <h3>Mastering UI/UX in Full Stack Development</h3>
+                    <p>It's not just about making it work; it's about making it luxurious. Explore our guidelines on combining complex backend architecture with elite frontend design.</p>
+                    <a href="#" class="read-more">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Pop-in Linked to Front End Number -->
+    <a href="https://wa.me/917204248002" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span>Chat with us</span>
+    </a>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Nammaweb. All Rights Reserved. | info@nammaweb.com</p>
+    </footer>
+
+</body>
+</html>
